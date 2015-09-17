@@ -1,0 +1,42 @@
+/* style.scss */ 
+
+@import
+  "scss/meyer-reset",
+  "bower_components/bourbon/dist/bourbon",
+  "scss/base",
+  "scss/layout";
+
+/* Logo */
+.logo {
+  width: 190px;
+  height: 245px;
+  display: block;
+  text-indent: -999em;
+  background: {
+    image: url('img/logo_wirthdesign.png');
+    repeat: no-repeat;
+    position: 0 0;
+    size: cover;
+  }
+  /* Home Page: Logo */
+  .page-home & {
+    margin: 0 0 0 -95px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+  }
+}
+
+/* 1.5 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi) {
+
+  /* Logo */
+  .logo {
+    background: {
+      image: url('img/logo_wirthdesign@2x.png');
+    }
+  }
+
+}
