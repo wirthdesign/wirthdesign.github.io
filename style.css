@@ -1,6 +1,6 @@
 /* style.scss */
 /* reset.scss */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -139,7 +139,7 @@ p {
 .overlay-wrapper {
   height: 100%;
   width: 100%;
-  border-top: 5px solid #663399;
+  border-top: 5px solid #f39720;
   background-image: url("img/bg_black-60.png");
   position: absolute;
   top: 0;
@@ -196,7 +196,7 @@ p {
   margin: .5em auto;
   float: left;
   overflow: hidden;
-  background-color: #663399;
+  background-color: #f39720;
   color: #fff;
   text-align: center;
   /* Social Wrapper: Font Awesome */
