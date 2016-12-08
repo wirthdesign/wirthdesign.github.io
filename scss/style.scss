@@ -1,0 +1,71 @@
+// Custom Styles
+
+// BASE
+@import 'base/base';
+// MODULES
+@import 'module/buttons';
+@import 'module/buttons';
+// VENDOR
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+// Section
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+
+    // Hero Section
+    &.section--hero {
+        border-top: .5rem solid #ED9121;
+        background: url('../img/hero/sunrise.jpg') #000 50% 50% no-repeat;
+    }
+
+    // SolarCity Section
+    &.section--scty {
+        background: url('../img/backgrounds/solar-panels.jpg') 50% 50% no-repeat;
+    }
+
+    // Wastebits Section
+    &.section--wastebits {
+        background: url('../img/backgrounds/waste-barrel.jpg') 50% 50% no-repeat;
+    }
+
+    // AkronWiT Section
+    &.section--akronwit {
+        background: url('../img/backgrounds/akronwit.jpg') 50% 25% no-repeat;
+    }
+
+    // Segmint Section
+    &.section--segmint {
+        background: url('../img/backgrounds/billboards.jpg') 50% 25% no-repeat;
+    }
+
+    // Project Details Section
+    &.section--project-details {
+        color: #333;
+        text-align: left;
+    }
+
+    // Footer Section
+    &.section--footer {
+        height: auto;
+
+        font-size: 3rem;
+    }
+
+    // Section Heading
+    .section--heading {
+        font-size: 8rem;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,22 @@
+// buttons.scss
+
+// Button
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    border-color: #fff;
+    color: #fff;
+}
+
+
+// Hovered Buttons
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    border-color: #fff;
+    color: #fff;
+}

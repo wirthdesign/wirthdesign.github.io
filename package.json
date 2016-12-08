@@ -1,0 +1,29 @@
+{
+  "name": "wirthdesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wirthdesign/wirthdesign.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wirthdesign/wirthdesign.github.io/issues"
+  },
+  "homepage": "https://github.com/wirthdesign/wirthdesign.github.io#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "getskeleton": "^2.0.4-2"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "lite-server": "^2.2.2"
+  }
+}
