@@ -63,9 +63,24 @@
     }
 }
 
+@media (max-width: 480px) {
+    .section {
+        // Section Heading
+        .section--heading {
+            font-size: 4rem;
+        }
+    }
+}
+
 .fixed {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
+}
+
+@media (max-width: 480px) {
+    .fixed {
+        position: relative;
+    }
 }

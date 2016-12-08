@@ -2396,8 +2396,16 @@ input[type="button"]:hover {
   .section .section--heading {
     font-size: 8rem; }
 
+@media (max-width: 480px) {
+  .section .section--heading {
+    font-size: 4rem; } }
+
 .fixed {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0; }
+
+@media (max-width: 480px) {
+  .fixed {
+    position: relative; } }
