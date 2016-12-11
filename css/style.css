@@ -32,19 +32,35 @@ main {
 
 .section {
   width: 100%;
-  height: 720px;
+  height: 100vh;
   display: flex;
   align-items: center;
   color: #fff;
   text-align: center; }
+
+@media (min-width: 480px) {
+  .section {
+    height: 720px; } }
 
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  height: 48px;
   border-color: #fff;
-  color: #fff; }
+  line-height: 48px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.75); }
+
+@media (min-width: 480px) {
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    height: 38px;
+    line-height: 38px; } }
 
 .button:hover,
 button:hover,
@@ -2384,18 +2400,43 @@ input[type="button"]:hover {
   clip: auto; }
 
 .section {
-  background-size: cover; }
+  background-repeat: no-repeat; }
   .section.section--hero {
     border-top: .5rem solid #ED9121;
-    background: url("../img/hero/kevin.jpg") #000 50% 100% no-repeat; }
+    background-image: url("../img/hero/kevin.jpg");
+    background-position: 50% 0; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .section.section--hero {
+        background-image: url("../img/hero/kevin@2x.jpg");
+        background-size: cover; } }
   .section.section--scty {
-    background: url("../img/backgrounds/solar-panels.jpg") 50% 50% no-repeat; }
+    background-image: url("../img/backgrounds/solar-panels.jpg");
+    background-position: 50% 50%; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .section.section--scty {
+        background-image: url("../img/backgrounds/solar-panels@2x.jpg");
+        background-size: cover; } }
   .section.section--wastebits {
-    background: url("../img/backgrounds/waste-barrel.jpg") 50% 50% no-repeat; }
+    background-image: url("../img/backgrounds/waste-barrel.jpg");
+    background-position: 50% 50%; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .section.section--wastebits {
+        background-image: url("../img/backgrounds/waste-barrel@2x.jpg");
+        background-size: cover; } }
   .section.section--akronwit {
-    background: url("../img/backgrounds/akronwit.jpg") 50% 25% no-repeat; }
+    background-image: url("../img/backgrounds/akronwit.jpg");
+    background-position: 50% 25%; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .section.section--akronwit {
+        background-image: url("../img/backgrounds/akronwit@2x.jpg");
+        background-size: cover; } }
   .section.section--segmint {
-    background: url("../img/backgrounds/billboards.jpg") 50% 100% no-repeat; }
+    background-image: url("../img/backgrounds/billboards.jpg");
+    background-position: 50% 100%; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .section.section--segmint {
+        background-image: url("../img/backgrounds/billboards@2x.jpg");
+        background-size: cover; } }
   .section.section--project-details {
     color: #333;
     text-align: left; }

@@ -15,32 +15,37 @@
 
 // Section
 .section {
-  background-size: cover;
+  background-repeat: no-repeat;
 
   // Hero Section
   &.section--hero {
     border-top: .5rem solid #ED9121;
-    background: url('../img/hero/kevin.jpg') #000 50% 100% no-repeat;
+    @include retina-image('../img/hero/kevin', cover);
+    background-position: 50% 0;
   }
 
   // SolarCity Section
   &.section--scty {
-    background: url('../img/backgrounds/solar-panels.jpg') 50% 50% no-repeat;
+    @include retina-image('../img/backgrounds/solar-panels', cover);
+    background-position: 50% 50%;
   }
 
   // Wastebits Section
   &.section--wastebits {
-    background: url('../img/backgrounds/waste-barrel.jpg') 50% 50% no-repeat;
+    @include retina-image('../img/backgrounds/waste-barrel', cover);
+    background-position: 50% 50%;
   }
 
   // AkronWiT Section
   &.section--akronwit {
-    background: url('../img/backgrounds/akronwit.jpg') 50% 25% no-repeat;
+    @include retina-image('../img/backgrounds/akronwit', cover);
+    background-position: 50% 25%;
   }
 
   // Segmint Section
   &.section--segmint {
-    background: url('../img/backgrounds/billboards.jpg') 50% 100% no-repeat;
+    @include retina-image('../img/backgrounds/billboards', cover);
+    background-position: 50% 100%;
   }
 
   // Project Details Section
