@@ -1,0 +1,16 @@
+// layout.scss
+
+// Fixed
+.fixed {
+  position: absolute;;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 480px) {
+  // Fixed
+  .fixed {
+    position: relative;
+  }
+}

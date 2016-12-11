@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif; }
@@ -8,21 +10,33 @@ h1, h2, h3, h4 {
 a {
   text-decoration: none; }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  border-color: #fff;
-  color: #fff; }
+.fixed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  border-color: #fff;
-  color: #fff; }
+@media (max-width: 480px) {
+  .fixed {
+    position: relative; } }
+
+main {
+  position: relative;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.75); }
+
+.section {
+  width: 100%;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center; }
 
 .button,
 button,
@@ -2370,15 +2384,10 @@ input[type="button"]:hover {
   clip: auto; }
 
 .section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-align: center; }
+  background-size: cover; }
   .section.section--hero {
     border-top: .5rem solid #ED9121;
-    background: url("../img/hero/sunrise.jpg") #000 50% 50% no-repeat; }
+    background: url("../img/hero/kevin.jpg") #000 50% 100% no-repeat; }
   .section.section--scty {
     background: url("../img/backgrounds/solar-panels.jpg") 50% 50% no-repeat; }
   .section.section--wastebits {
@@ -2386,7 +2395,7 @@ input[type="button"]:hover {
   .section.section--akronwit {
     background: url("../img/backgrounds/akronwit.jpg") 50% 25% no-repeat; }
   .section.section--segmint {
-    background: url("../img/backgrounds/billboards.jpg") 50% 25% no-repeat; }
+    background: url("../img/backgrounds/billboards.jpg") 50% 100% no-repeat; }
   .section.section--project-details {
     color: #333;
     text-align: left; }
@@ -2399,13 +2408,3 @@ input[type="button"]:hover {
 @media (max-width: 480px) {
   .section .section--heading {
     font-size: 4rem; } }
-
-.fixed {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0; }
-
-@media (max-width: 480px) {
-  .fixed {
-    position: relative; } }
